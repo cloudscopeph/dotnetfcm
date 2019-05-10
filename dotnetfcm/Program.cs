@@ -52,7 +52,7 @@ namespace dotnetfcm
 
             var messageInformation = new FcmMessage()
             {
-                notification = new Notification()
+                notification = new Payload()
                 {
                     title = title,
                     body = messageBody
@@ -113,7 +113,7 @@ namespace dotnetfcm
         /// <summary>
         /// Contains the configuration of the FCM Message such as the server key and the destination device id
         /// </summary>
-        class FcmConfig
+        public class FcmConfig
         {
             public string DestinationDeviceId { get; set; }
             public string ServerKey { get; set; }

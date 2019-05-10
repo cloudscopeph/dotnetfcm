@@ -7,10 +7,10 @@ namespace dotnetfcm
     public class FcmMessage
     {
         public string to { get; set; }
-        public Notification notification { get; set; }
+        public Payload notification { get; set; }
         public object data { get; set; }
     }
-    public class Notification
+    public class Payload
     {
         public string title { get; set; }
         public string text { get; set; }
